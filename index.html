@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chess page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="layout-nav">
+
+        <div class="nav-menu-narrow">
+            <div class="nav-menu-left">
+                <img src="./assets/app-logo.png" alt="app-icon" class="app-icon">
+                <strong class="app-title">Squares</strong>
+            </div>
+            <div class="nav-menu-right">
+                <img src="./assets/nav-pawn-icon.png" alt="nav-ongoing-games" class="menu-right-icon">
+                <img src="./assets/nav-message-icon.png" alt="nav-message" class="menu-right-icon">
+                <img src="./assets/nav-bell-icon.png" alt="nav-notifications" class="menu-right-icon">
+                <img src="./assets/nav-gear-icon.png" alt="nav-settings" class="menu-right-icon">
+            </div>
+        </div>
+
+        <div class="nav-menu-wide">
+            <div class="nav-menu-left">
+                <img src="./assets/app-logo.png" alt="app-icon" class="app-icon">
+                <strong class="app-title">Squares</strong>
+            </div>
+            <a href="" class="nav-link nav-ongoing-games">
+                <img src="./assets/nav-wide-pawn-icon.png" alt="nav-ongoing-games">
+                <span class="nav-link-title">Games</span>
+            </a>
+            <a href="" class="nav-link nav-ongoing-messages">
+                <img src="./assets/nav-wide-message-icon.png" alt="nav-message">
+                <span class="nav-link-title">Messages</span>
+            </a>
+            <a href="" class="nav-link nav-ongoing-notifications">
+                <img src="./assets/nav-wide-bell-icon.png" alt="nav-notifications">
+                <span class="nav-link-title">Notifications</span>
+            </a>
+            <a href="" class="nav-link nav-ongoing-settings">
+                <img src="./assets/nav-wide-settings-icon.png" alt="nav-settings">
+                <span class="nav-link-title">Settings</span>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="layout-main">
+
+            <div class="layout-game">
+
+                <div class="layout-player-top">
+                    <div class="player-main-block">
+                        <div class="player-avatar">
+                            <img src="./assets/player-profilepic-trollface-2.png" alt="player1-profile-picture" class="player-avatar-image">
+                        </div>
+                        <div class="player-info-captured-block">
+                            <div class="player-info">
+                                <span class="player-info-username">Player 1</span>
+                                <span class="player-info-rating">(1500)</span>
+                            </div>
+                            <div class="player-captured-pieces">
+                                <div class="captured-piece">
+                                    <img src="./assets/wikipedia/wP.png" alt="captured-piece" class="captured captured-pawn-white">
+                                </div>
+                                <div class="captured-piece">
+                                    <img src="./assets/wikipedia/wB.png" alt="captured-piece" class="captured captured-bishop-white">
+                                </div>
+                                <div class="captured-piece">
+                                    <img src="./assets/wikipedia/wR.png" alt="captured-piece" class="captured captured-rook-white">
+                                </div>
+                                <div class="captured-piece">
+                                    <img src="./assets/wikipedia/wR.png" alt="captured-piece" class="captured captured-rook-white">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-clock">
+                        <!-- <img src="" alt="" class="clock-icon"> -->
+                        <span class="clock-timeLeft">24 hours</span>
+                    </div>
+                </div>
+    
+                <div class="layout-chessboard">
+                    <div class="chessboard-row">
+                        <div class="chessboard-square square-white square-a8">
+                            <img src="./assets/wikipedia/bR.png" alt="rook-black" class="piece piece-rook-black">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/bN.png" alt="knight-black" class="piece piece-knight-black">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/bB.png" alt="bishop-black" class="piece piece-bishop-black">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/bQ.png" alt="queen-black" class="piece piece-queen-black">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/bK.png" alt="king-black" class="piece piece-king-black">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/bB.png" alt="bishop-black" class="piece piece-bishop-black">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/bN.png" alt="knight-black" class="piece piece-knight-black">
+                        </div>
+                        <div class="chessboard-square square-black square-h8">
+                            <img src="./assets/wikipedia/bR.png" alt="rook-black" class="piece piece-rook-black">
+                        </div>
+                    </div>
+                    <div class="chessboard-row">
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/bP.png" alt="pawn-black" class="piece piece-pawn-black">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/bP.png" alt="pawn-black" class="piece piece-pawn-black">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/bP.png" alt="pawn-black" class="piece piece-pawn-black">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/bP.png" alt="pawn-black" class="piece piece-pawn-black">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/bP.png" alt="pawn-black" class="piece piece-pawn-black">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/bP.png" alt="pawn-black" class="piece piece-pawn-black">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/bP.png" alt="pawn-black" class="piece piece-pawn-black">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/bP.png" alt="pawn-black" class="piece piece-pawn-black">
+                        </div>
+                    </div>
+                    <div class="chessboard-row">
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                    </div>
+                    <div class="chessboard-row">
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                    </div>
+                    <div class="chessboard-row">
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                    </div>
+                    <div class="chessboard-row">
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                        <div class="chessboard-square square-black"></div>
+                        <div class="chessboard-square square-white"></div>
+                    </div>
+                    <div class="chessboard-row">
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/wP.png" alt="pawn-white" class="piece piece-pawn-white">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/wP.png" alt="pawn-white" class="piece piece-pawn-white">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/wP.png" alt="pawn-white" class="piece piece-pawn-white">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/wP.png" alt="pawn-white" class="piece piece-pawn-white">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/wP.png" alt="pawn-white" class="piece piece-pawn-white">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/wP.png" alt="pawn-white" class="piece piece-pawn-white">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/wP.png" alt="pawn-white" class="piece piece-pawn-white">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/wP.png" alt="pawn-white" class="piece piece-pawn-white">
+                        </div>
+                    </div>
+                    <div class="chessboard-row">
+                        <div class="chessboard-square square-black square-a1">
+                            <img src="./assets/wikipedia/wR.png" alt="rook-white" class="piece piece-rook-white">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/wN.png" alt="knight-white" class="piece piece-knight-white">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/wB.png" alt="bishop-white" class="piece piece-bishop-white">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/wQ.png" alt="queen-white" class="piece piece-queen-white">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/wK.png" alt="king-white" class="piece piece-king-white">
+                        </div>
+                        <div class="chessboard-square square-white">
+                            <img src="./assets/wikipedia/wB.png" alt="bishop-white" class="piece piece-bishop-white">
+                        </div>
+                        <div class="chessboard-square square-black">
+                            <img src="./assets/wikipedia/wN.png" alt="knight-white" class="piece piece-knight-white">
+                        </div>
+                        <div class="chessboard-square square-white square-h1">
+                            <img src="./assets/wikipedia/wR.png" alt="rook-white" class="piece piece-rook-white">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="layout-player-bottom">
+                    <div class="player-main-block">
+                        <div class="player-avatar">
+                            <img src="./assets/player-profilepic-trollface-2.png" alt="player2-profile-picture" class="player-avatar-image">
+                        </div>
+                        <div class="player-info-captured-block">
+                            <div class="player-info">
+                                <span class="player-info-username">Player 2</span>
+                                <span class="player-info-rating">(1500)</span>
+                            </div>
+                            <div class="player-captured-pieces">
+                                <div class="captured-piece">
+                                    <img src="./assets/wikipedia/bP.png" alt="captured-piece" class="captured captured-pawn-black">
+                                </div>
+                                <div class="captured-piece">
+                                    <img src="./assets/wikipedia/bB.png" alt="captured-piece" class="captured captured-bishop-black">
+                                </div>
+                                <div class="captured-piece">
+                                    <img src="./assets/wikipedia/bR.png" alt="captured-piece" class="captured captured-rook-black">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-clock">
+                        <!-- <img src="" alt="" class="clock-icon"> -->
+                        <span class="clock-timeLeft">24 hours</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-sidebars-narrow">
+
+                <div class="layout-sidebar-moves">
+                    <div class="sidebar-moves-header">
+                        <img src="./assets/history-icon.png" alt="history-icon" class="sidebar-moves-header-icon">
+                        <span class="sidebar-moves-header-title">Moves history</span>
+                    </div>
+    
+                    <div class="sidebar-moves-main">
+                        <div class="moves-list">
+                            <div class="move move-1">
+                                <div class="move-item move-item-index">1.</div>
+                                <div class="move-item move-item-white">&#9821e4</div>
+                                <div class="move-item move-item-black">&#9821e6</div>
+                            </div>
+                            <div class="move move-2">
+                                <div class="move-item move-item-index">2.</div>
+                                <div class="move-item move-item-white">&#9821d4</div>
+                                <div class="move-item move-item-black">&#9821d5</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="sidebar-moves-endgame">
+                        <button class="endgame-button endgame-button-draw">
+                            <img class="draw-icon" src="./assets/draw-icon.png" alt="draw-icon">
+                            <span class="button-draw-label">Draw</span>
+                        </button>
+                        <button class="endgame-button endgame-button-resign">
+                            <img class="resign-icon" src="./assets/resign-icon.png" alt="resign-icon">
+                            <span class="button-resign-label">Surrender</span>
+                        </button>
+                    </div>
+    
+                    <div class="sidebar-moves-analyse">
+                        <div class="moves-analyse-buttons">
+                            <button class="button-analyse">
+                                <img class="button-analyse-icon" src="./assets/analyse-icon.png" alt="analyse-icon"/>
+                            </button>
+                            <button class="button-analyse">
+                                <img class="button-analyse-icon" src="./assets/back-icon.png" alt="back-icon"/>
+                            </button>
+                            <button class="button-analyse">
+                                <img class="button-analyse-icon" src="./assets/forward-icon.png" alt="forward-icon"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="layout-sidebar-chat">
+                    <div class="sidebar-chat-header">
+                        <img src="./assets/chat-icon.png" alt="chat-icon" class="sidebar-chat-header-icon">
+                        <span class="sidebar-chat-header-title">Chat</span>
+                    </div>
+                    <div class="sidebar-chat-main">
+                        <div class="chat-conversation">
+                            <div class="message">
+                                <span class="message-item message-item-player1">Player 1:</span>
+                                <div class="message-item message-content">Lorem Ipsum</div>
+                            </div>
+                            <div class="message">
+                                <span class="message-item message-item-player2">Player 2:</span>
+                                <div class="message-item message-content">Lorem Ipsum</div>
+                            </div>
+                        </div>
+                        <div class="chat-modal-endgame">
+                            <span class="chat-modal-endgame-proposal">Player 1 has offered to draw</span>
+                            <div class="chat-modal-endgame-proposal-buttons">
+                                <button class="button-accept">
+                                    <img src="./assets/validate-icon.png" alt="accept-icon" class="accept-icon">
+                                    <div class="accept-label">Accept</div>
+                                </button>
+                                <button class="button-decline">
+                                    <img src="./assets/refuse-icon.png" alt="" class="decline-icon">
+                                    <div class="decline-label">Decline</div>
+                                </button>
+                            </div>
+                        </div>
+                        <textarea class="chat-textarea" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <div class="sidebar-chat-footer">
+                        <div class="chat-footer-buttons">
+                            <button class="button-block">
+                                <img src="./assets/forbidden-icon.png" alt="" class="block-icon">
+                                <div class="block-label">Block chat</div>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
