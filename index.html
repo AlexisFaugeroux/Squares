@@ -59,6 +59,48 @@
     <main>
         <div class="layout-main">
 
+            <div class="layout-sidebar-chat-wide">
+                <div class="sidebar-chat-header">
+                    <img src="./assets/chat-icon.png" alt="chat-icon" class="sidebar-chat-header-icon">
+                    <span class="sidebar-chat-header-title">Chat</span>
+                </div>
+                <div class="sidebar-chat-main">
+                    <div class="chat-conversation">
+                        <div class="message">
+                            <span class="message-item message-item-player1">Player 1:</span>
+                            <div class="message-item message-content">Lorem Ipsum</div>
+                        </div>
+                        <div class="message">
+                            <span class="message-item message-item-player2">Player 2:</span>
+                            <div class="message-item message-content">Lorem Ipsum</div>
+                        </div>
+                    </div>
+                    <div class="chat-modal-endgame">
+                        <span class="chat-modal-endgame-proposal">Player 1 has offered to draw</span>
+                        <div class="chat-modal-endgame-proposal-buttons">
+                            <button class="button-accept">
+                                <img src="./assets/validate-icon.png" alt="accept-icon" class="accept-icon">
+                                <div class="accept-label">Accept</div>
+                            </button>
+                            <button class="button-decline">
+                                <img src="./assets/refuse-icon.png" alt="" class="decline-icon">
+                                <div class="decline-label">Decline</div>
+                            </button>
+                        </div>
+                    </div>
+                    <textarea class="chat-textarea" placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="sidebar-chat-footer">
+                    <div class="chat-footer-buttons">
+                        <button class="button-block">
+                            <img src="./assets/forbidden-icon.png" alt="" class="block-icon">
+                            <div class="block-label">Block chat</div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="layout-game">
 
                 <div class="layout-player-top">
@@ -266,6 +308,53 @@
                     <div class="player-clock">
                         <!-- <img src="" alt="" class="clock-icon"> -->
                         <span class="clock-timeLeft">24 hours</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-sidebar-moves-wide">
+                <div class="sidebar-moves-header">
+                    <img src="./assets/history-icon.png" alt="history-icon" class="sidebar-moves-header-icon">
+                    <span class="sidebar-moves-header-title">Moves history</span>
+                </div>
+
+                <div class="sidebar-moves-main">
+                    <div class="moves-list">
+                        <div class="move move-1">
+                            <div class="move-item move-item-index">1.</div>
+                            <div class="move-item move-item-white">&#9821e4</div>
+                            <div class="move-item move-item-black">&#9821e6</div>
+                        </div>
+                        <div class="move move-2">
+                            <div class="move-item move-item-index">2.</div>
+                            <div class="move-item move-item-white">&#9821d4</div>
+                            <div class="move-item move-item-black">&#9821d5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-moves-endgame">
+                    <button class="endgame-button endgame-button-draw">
+                        <img class="draw-icon" src="./assets/draw-icon.png" alt="draw-icon">
+                        <span class="button-draw-label">Draw</span>
+                    </button>
+                    <button class="endgame-button endgame-button-resign">
+                        <img class="resign-icon" src="./assets/resign-icon.png" alt="resign-icon">
+                        <span class="button-resign-label">Surrender</span>
+                    </button>
+                </div>
+
+                <div class="sidebar-moves-analyse">
+                    <div class="moves-analyse-buttons">
+                        <button class="button-analyse">
+                            <img class="button-analyse-icon" src="./assets/analyse-icon.png" alt="analyse-icon"/>
+                        </button>
+                        <button class="button-analyse">
+                            <img class="button-analyse-icon" src="./assets/back-icon.png" alt="back-icon"/>
+                        </button>
+                        <button class="button-analyse">
+                            <img class="button-analyse-icon" src="./assets/forward-icon.png" alt="forward-icon"/>
+                        </button>
                     </div>
                 </div>
             </div>
